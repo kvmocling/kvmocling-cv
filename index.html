@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Developer's Profile</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+<style>
+/*body {  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:center; width:60%; margin:auto; background:url(../background2.png)}
+p{  color:#525252;  font-size:12px; }*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	transition:0.1s linear;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+/*h1 {  font-family: Helvetica, Arial, sans-serif;  text-align: center; font-size:50px; margin-top:60px; color:#fff;
+	  text-shadow: 2px 2px 0px rgba(255,255,255,.7), 5px 7px 0px rgba(0, 0, 0, 0.1); */
+
+.container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  /*padding: 10px;*/
+}
+
+.logoimage {
+  display: block;
+  width: 200px;
+  height: 200px;
+   padding: 10px;
+   border: 10px;
+}
+
+.overlay {
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eee;
+}
+
+.container:hover .overlay{
+   opacity: 1;
+
+}
+
+.ltext {
+  color: white;
+  border: 3px solid white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.overlayLeft {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(103, 58, 183, 0.71);
+}
+
+.overlayRight {
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(103, 58, 183, 0.71);
+}
+
+.container:hover .overlayLeft, .container:hover .overlayRight{
+  width: 100%;
+
+}
+
+.overlayTop {
+  height: 0;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(103, 58, 183, 0.71);
+}
+
+.overlayBottom {
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(103, 58, 183, 0.71);
+}
+
+.container:hover .overlayTop, .container:hover .overlayBottom{
+  height: 100%;
+
+}
+
+
+
+}
+</style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},4000);
+	});
+});
+</script>
+
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="#banner">Developer's Profile</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="#banner">Home</a></li>
+								<li><a href="#one">About Me</a></li>
+								<li><a href="#two">Skills</a></li>
+								<li><a href="#four">My Works</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-diamond"></span></div>
+							<h2>Krizzia Venci C. Mocling</h2>
+							<p>Web Developer</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">About Me</h2>
+										<p>In life I believe on the positive side, so when it comes to handling problems and issues I know that there will always be something better that we can do. We can turn everything on the way we wanted, it just depends on how we look at it.</p>
+                    <p>  
+                    I have good analytical skills and enjoy programming and working with teams and companies. I'm organized and can work under pressure. Can work with different types of people and loves challenges. Eager to learn more on enhancing my skills.</p>
+										<!-- <a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<div class="content">
+										<h2 class="major">Programming Skills</h2>
+									<!-- 	<div class="skillbar clearfix " data-percent="50%">
+										<div class="skillbar-title" style="background: #d35400;"><span>HTML</span></div>
+										<div class="skillbar-bar" style="background: #e67e22;"></div>
+										<div class="skill-bar-percent">50%</div>
+									</div>
+
+									<div class="skillbar clearfix " data-percent="30%">
+										<div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+										<div class="skillbar-bar" style="background: #3498db;"></div>
+										<div class="skill-bar-percent">30%</div>
+									</div>
+
+									<div class="skillbar clearfix " data-percent="50%">
+										<div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
+										<div class="skillbar-bar" style="background: #2c3e50;"></div>
+										<div class="skill-bar-percent">50%</div>
+									</div>
+
+									<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+										<div class="skillbar-bar" style="background: #5a68a5;"></div>
+										<div class="skill-bar-percent">60%</div>
+									</div>
+
+									<div class="skillbar clearfix " data-percent="60%">
+										<div class="skillbar-title" style="background: #333333;"><span>Laravel</span></div>
+										<div class="skillbar-bar" style="background: #525252;"></div>
+										<div class="skill-bar-percent">60%</div>
+									</div> -->
+
+							<!-- 		<div class="skillbar clearfix " data-percent="100%">
+										<div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
+										<div class="skillbar-bar" style="background: #2ecc71;"></div>
+										<div class="skill-bar-percent">100%</div>
+									</div>
+
+									<div class="skillbar clearfix " data-percent="70%">
+										<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+										<div class="skillbar-bar" style="background: #4288d0;"></div>
+										<div class="skill-bar-percent">70%</div>
+									</div> -->
+
+
+                  <div align="center">
+                    <div>
+
+                       <div class="container">
+                      <img class="logoimage" src="images/html.jpg" alt="">
+                        <div class="overlay overlayLeft">
+                            <div class="ltext">Advance</div>
+                        </div>
+
+                      </div>
+
+                      <div class="container">
+                      <img class="logoimage" src="images/css.jpg" alt="">
+                        <div class="overlay overlayTop">
+                            <div class="ltext">Intermediate</div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                      <img class="logoimage" src="images/js.jpg" alt="">
+                        <div class="overlay overlayTop">
+                            <div class="ltext">Intermediate</div>
+                        </div>
+                      </div>
+
+                       <div class="container">
+                      <img class="logoimage" src="images/vb.jpg" alt="">
+                        <div class="overlay overlayRight">
+                            <div class="ltext">Advance</div>
+                        </div>
+                      </div>
+
+                    </div>  
+                  </div>  
+											
+                    <div align="center">
+                    <div>
+
+                        <div class="container">
+                      <img class="logoimage" src="images/ajax.jpg" alt="">
+                        <div class="overlay overlayLeft">
+                            <div class="ltext">Intermediate</div>
+                        </div>
+                      </div>
+
+                       <div class="container">
+                      <img class="logoimage" src="images/nodejs.jpg" alt="">
+                        <div class="overlay overlayBottom">
+                            <div class="ltext">Beginner</div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                      <img class="logoimage" src="images/php.jpg" alt="">
+                        <div class="overlay overlayBottom">
+                            <div class="ltext">Intermediate</div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                      <img class="logoimage" src="images/laravel.jpg" alt="">
+                        <div class="overlay overlayRight">
+                            <div class="ltext">Advance</div>
+                        </div>
+                      </div>
+
+
+                    </div>  
+                  </div> 
+
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+		<!-- 					<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Nullam dignissim</h2>
+										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+
+
+                 
+                    
+
+
+								</div>
+							</section> -->
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">My Works</h2>
+									<p>Sample works created during the course of the bootcamp.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/rd.png" alt="" /></a>
+											<h3 class="major">Reel Deal</h3>
+											<p>A website created for movie fanatics to check out upcoming movies of the year. Website created using HTML,Bootstrap and CSS.</p>
+											<a href="https://kvmocling.github.io/Capstone1/ReelDeal.html" target="_blank" class="special">Check Site</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/tl1.png" alt="" /></a>
+											<h3 class="major">Tsoko-Latte</h3>
+											<p>An e-commerce website where you can check out different types of luscious chocolates. Website is created using HTML,CSS,Bootstrap and PHP</p>
+											<a href="http://tsokolatte.x10host.com/home.php" target="_blank" class="special">Check Site</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/sirkel1.png" alt="" /></a>
+											<h3 class="major">SirKel</h3>
+											<p>A website to connect friends and communicate online.Website is created with HTML,CSS,bootstrap,PHP,Laravel and Vue JS.</p>
+											<a href="http://sirkel.brightframework.com/" target="_blank" class="special">Check Site</a>
+										</article>
+									<!-- 	<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Fusce consequat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article> -->
+									</section>
+									<ul class="actions">
+										<li><a href="https://tinyurl.com/kvmocling-cv" target="_blank" class="button">Check my Resume</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>If you have any questions and inquiries about my works feel free to contact me or send me an email.</p>
+							<form method="post" action="mailto:kvmocling@yahoo.com" enctype="text/plain">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="Name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="Emailaddress" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="Message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									1035 Samar Street,Sampaloc Manila
+								</li>
+								<li class="fa-phone">09157711047</li>
+								<li class="fa-envelope"><a href="#">kvmocling@yahoo.com</a></li>
+								<!-- <li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
+							</ul>
+							<ul class="copyright">
+								<li>&copy;Krizzia Venci C. Mocling.</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+	<!-- Scripts -->
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+			<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	</body>
+</html>
